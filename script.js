@@ -60,7 +60,6 @@ function addNotes() {
         titleValue = ""
         noteValue = ""
         notesElem.appendChild(card)
-        // document.querySelector(".card").id = `${"c" + count}`
 
         let showInput = document.getElementById("input")
         showInput.style = "display:hiden"
@@ -79,12 +78,7 @@ function addNotes() {
 
 
 function call(click_id) {
-    // // const btns = document.getElementsByClassName("dot")
-    // // console.log(btns);
-    // // alert(click_id)
-    // const idd = document.getElementById(click_id)
-    // const colo = document.getElementsByClassName("cardColo")
-    // // console.log(document.getElementById(click_id + 1));
+
     if (tar === false) {
         document.getElementById(parseInt(click_id) + 1).style = "display: block"
         tar = true
@@ -98,20 +92,10 @@ function call(click_id) {
 function chanceCol(getId) {
 
     const colours = ["#FFFFFF", "#CBD2D6", "#CCE8E4", "#FAF1DB", "#FDE9D9", "#F9DCD5"]
-    // alert(getId)
-    // const cir = document.getElementById(getId)
-    // const colour = cir.style.color
-    // console.log(colour);
+
     const colo = document.getElementById(`${"c" + getId.toString()}`)
     console.log(colo);
-    // colo.style.backgroundColor = `${colours[getId]}`
     const cards = document.getElementsByClassName("card")
     cards[getId - 1].style.backgroundColor = `${colours[getId]}`
-
-
-
-
-    // const colo = document.getElementById(getId)
-    // document.getElementsByClassName("card").style = `background-color: ${"#" + getId};`
 
 }
