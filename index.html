@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note | Keeper</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bodyBg">
+
+
+    <!-- nav section -->
+
+    <nav class="nav">
+        <div class="navFlex">
+            <div>
+                <h1 class="vm">VM<span class="note">Note</span></h1>
+            </div>
+            <div>
+                <button class="notBtn " onclick="(newNote())">NEW NOTE</button>
+                <div id="input" class="input">
+                    <form>
+                        <input id="titleText" class="input1" placeholder="Note title" type="text"><br>
+                        <textarea id="mainNote" class="input2" placeholder="enter your note" name="text" cols="30"
+                            rows="10"></textarea>
+                        <button id="btn" class="add">Add</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- notes card -->
+    <section class="cointainer">
+        <!-- <div class="card">
+            <div class="cardflex">
+                <div>
+                    <h3>Grossary List</h3>
+                </div>
+                <div>
+                    <h3><i class="fa-solid fa-ellipsis-vertical"></i></h3>
+                </div>
+
+                <div class="">
+                    <h5 class="coloHead">Change Background</h5>
+                    <ul>
+                        <li class="li1"><i class="fa-solid fa-circle"></i></li>
+                        <li class="li2"><i class="fa-solid fa-circle"></i></li>
+                        <li class="li3"><i class="fa-solid fa-circle"></i></li>
+                        <li class="li4"><i class="fa-solid fa-circle"></i></li>
+                        <li class="li5"><i class="fa-solid fa-circle"></i></li>
+                        <li class="li6"><i class="fa-solid fa-circle"></i></li>
+                    </ul>
+                    <hr class="line">
+                    <h4 class="delete">Delete</h4>
+                </div>
+                <div class="list">
+                    <textarea class="menu" cols="20" rows="10"></textarea>
+                </div>
+            </div>
+
+
+        </div> -->
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
