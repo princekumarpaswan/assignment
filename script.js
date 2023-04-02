@@ -9,6 +9,7 @@ submit.addEventListener("click", (e) => {
 let notsElem = document.querySelector(".cointainer")
 
 
+
 function addNotes() {
 
     let card = document.createElement('div')
